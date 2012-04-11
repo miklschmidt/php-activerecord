@@ -1721,6 +1721,11 @@ class Model
 	{
 		return $this->serialize('Xml', $options);
 	}
+	
+	public function to_array(array $options=array())
+	{
+		return $this->serialize('Array', $options);
+	}
 
    /**
    * Returns an CSV representation of this model.
